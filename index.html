@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+
+    <div class="full-img" id="fullImgBox">
+        <img src="https://www.zdnet.com/a/img/resize/ba1b1ab92085d777ab5e313b34c66a94b7aa1236/2023/06/05/79a43eb8-ce38-488c-8cc0-e04699aaca7f/bing.jpg?auto=webp&width=1280" id="fullImg">
+        <span onclick="closeFullImage()">X</span>
+    </div>
+<h1><center>Image Gallery</center></h1>
+<div class="imgGallery">
+ 
+    <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg" onclick="openFullImage(this.src)">
+    <img src="https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg" onclick="openFullImage(this.src)">
+    <img src="https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg" onclick="openFullImage(this.src)">
+    <img src="https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg" onclick="openFullImage(this.src)">
+    <img src="https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg" onclick="openFullImage(this.src)">
+    <img src="https://fakestoreapi.com/img/61sbMiUnoGL._AC_UL640_QL65_ML3_.jpg" onclick="openFullImage(this.src)">
+    <img src="https://fakestoreapi.com/img/71YAIFU48IL._AC_UL640_QL65_ML3_.jpg" onclick="openFullImage(this.src)">
+    <img src="https://fakestoreapi.com/img/51UDEzMJVpL._AC_UL640_QL65_ML3_.jpg" onclick="openFullImage(this.src)">
+    <img src="https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg" onclick="openFullImage(this.src)">
+    <img src="https://fakestoreapi.com/img/61U7T1koQqL._AC_SX679_.jpg" onclick="openFullImage(this.src)">
+    <img src="https://fakestoreapi.com/img/61mtL65D4cL._AC_SX679_.jpg" onclick="openFullImage(this.src)">
+    <img src="https://fakestoreapi.com/img/81Zt42ioCgL._AC_SX679_.jpg" onclick="openFullImage(this.src)">
+    <img src="https://fakestoreapi.com/img/81QpkIctqPL._AC_SX679_.jpg" onclick="openFullImage(this.src)">
+    <img src="https://fakestoreapi.com/img/61pHAEJ4NML._AC_UX679_.jpg" onclick="openFullImage(this.src)">
+    <img src="https://fakestoreapi.com/img/51Y5NI-I5jL._AC_UX679_.jpg" onclick="openFullImage(this.src)">
+    <img src="https://fakestoreapi.com/img/71z3kpMAYsL._AC_UY879_.jpg" onclick="openFullImage(this.src)">
+    <img src="https://fakestoreapi.com/img/81XH0e8fefL._AC_UY879_.jpg" onclick="openFullImage(this.src)">
+    <img src="https://fakestoreapi.com/img/71HblAHs5xL._AC_UY879_-2.jpg" onclick="openFullImage(this.src)">
+
+</div>
+
+    <script>
+      var fullImgBox = document.getElementById("fullImgBox");
+
+var fullImg = document.getElementById("fullImg");
+
+function openFullImage(pic){
+    fullImgBox.style.display = "flex"; 
+    fullImg.src = pic;
+}
+
+function closeFullImage(){
+
+    fullImgBox.style.display = "none";
+}
+        
+    </script>
+</body>
+</html>t
